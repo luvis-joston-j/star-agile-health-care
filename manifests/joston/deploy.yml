@@ -16,7 +16,7 @@ spec:
       containers:
         - name: c1
           image: luvisjostonj/health:3
-----
+---
 kind: Service
 apiVersion: v1
 metadata:
