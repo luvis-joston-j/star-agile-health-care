@@ -16,3 +16,15 @@ spec:
       containers:
         - name: c1
           image: luvisjostonj/health:3
+----
+kind: Service
+apiVersion: v1
+metadata:
+  name: mysvc
+spec:
+  type: NodePort
+  ports:
+    - targetPort: 8082
+      port: 80
+  selector:
+     luv: jos
